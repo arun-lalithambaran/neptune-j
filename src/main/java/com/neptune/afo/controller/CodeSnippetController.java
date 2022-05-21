@@ -1,14 +1,12 @@
 package com.neptune.afo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping(path = "api/v1/")
+@RestController
 public class CodeSnippetController {
-
-    @GetMapping("/getAllCodeSnippets")
-    private String getAllCodeSnippets() {
-        return "Hello world!";
+    @GetMapping
+    public String getAllSnippets() {
+        return "Hello World";
     }
-
 }
